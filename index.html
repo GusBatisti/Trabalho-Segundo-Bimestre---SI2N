@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/a785366295.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+  
+  <div id="form">
+    <div class="container">
+        <img src= "band.png" class="band" alt= "Logo refugee home">
+      
+      
+      <form action="" class= "formu">
+        
+       
+        
+        <h2 class="title">Cadastrar</h2>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+        
+        <lable id="labelNome" for="username">Nome</lable>
+        <div class="input"> 
+          <i class="fa-solid fa-user"></i>
+          <input id="username" name="username" placeholder="Username" type= "text">
+        </div>
+        
+        <lable id="labelEmail" for="email">Email</lable>
+        <div class="input">
+          <i class="fa-solid fa-envelope"></i>
+          <input id="email" name="email" placeholder="Email" type= "text">
+        </div>
+  
+        <lable id="labelSenha" for="senha">Senha</lable>
+          <div class="input">
+            <i id= "verSenha" class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-key"></i>
+            <input id="senha" name="senha" placeholder="Senha" type= "password">
+          </div>
+
+         <lable id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</lable>
+        <div class="input">
+          <i id= "verConfirmeSenha" class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-key"></i>
+          <input id="confirmSenha" name="senha" placeholder="Confirmar Senha" type= "password" >
+        </div>
+  
+        <div id="btn">
+          <button onclick= "cadastrar()" type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
